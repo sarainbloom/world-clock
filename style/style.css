@@ -30,9 +30,9 @@ select {
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 60px auto;
   background-color: #f7eedd;
-  padding: 60px;
+  padding: 30px;
   margin: 60px;
   border-radius: 8px;
   border-color: #008dda;
