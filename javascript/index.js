@@ -30,6 +30,22 @@ function updateBerlinTime() {
 
 setInterval(updateBerlinTime, 1000);
 
+//Tokyo
+function updateTokyoTime() {
+  let tokyoElement = document.querySelector("#tokyo");
+  let tokyoDateElement = tokyoElement.querySelector(".date");
+  let tokyoTimeElement = tokyoElement.querySelector(".time");
+
+  let tokyoTime = moment().tz("Asia/Tokyo");
+
+  tokyoDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+  tokyoTimeElement.innerHTML = `${tokyoTime.format(
+    "h:mm:ss"
+  )} <small>${tokyoTime.format("A")}`;
+}
+
+setInterval(updateTokyoTime, 1000);
+
 //New York
 function updateNewYorkTime() {
   let newYorkElement = document.querySelector("#new-york");
@@ -45,6 +61,22 @@ function updateNewYorkTime() {
 }
 
 setInterval(updateNewYorkTime, 1000);
+
+//Melbourne
+function updateMelbourneTime() {
+  let melbourneElement = document.querySelector("#melbourne");
+  let melbourneDateElement = melbourneElement.querySelector(".date");
+  let melbourneTimeElement = melbourneElement.querySelector(".time");
+
+  let melbourneTime = moment().tz("Australia/Melbourne");
+
+  melbourneDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+  melbourneTimeElement.innerHTML = `${melbourneTime.format(
+    "h:mm:ss"
+  )} <small>${melbourneTime.format("A")}`;
+}
+
+setInterval(updateMelbourneTime, 1000);
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;

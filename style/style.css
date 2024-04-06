@@ -15,6 +15,11 @@ h2 {
   font-size: 28px;
 }
 
+h3 {
+  color: #008dda;
+  text-align: center;
+}
+
 select {
   display: block;
   margin: 0 auto;
