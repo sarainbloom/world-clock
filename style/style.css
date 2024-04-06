@@ -1,5 +1,6 @@
 body {
   font-family: ubuntu;
+  background-color: #ace2e1;
 }
 
 h1 {
@@ -31,13 +32,12 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: #f7eedd;
+  background: #f7eedd;
   padding: 30px;
-  margin: 60px;
-  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
   border-color: #008dda;
   border-style: groove;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .city {
@@ -66,6 +66,6 @@ select {
 footer {
   text-align: center;
   font-size: 18px;
-  color: #41c9e2;
+  color: #008dda;
   padding: 15px;
 }
